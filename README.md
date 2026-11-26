@@ -33,6 +33,13 @@ older Python. The default template image is therefore `cycle.image.ubuntu22`
 (Ubuntu 22.04, Python 3.10). Ubuntu 20.04 images ship Python 3.8 and cannot install
 the plugin.
 
+Check the image against IBM's
+[Linux support matrix](https://www.ibm.com/docs/en/spectrum-symphony/7.3.2?topic=systems-linux-support)
+for your Symphony version. IBM supports Ubuntu 22.04 and 24.04 only with
+Symphony 7.3.2 Fix 602717 or later; Symphony 7.3.1 lists Ubuntu 20.04 (kernel 5.4)
+but not 22.04. Symphony 7.3.1 also does not recognize Linux kernel 6.x, which newer
+Ubuntu images use.
+
 This project requires the following:
 
   1. A license to use IBM Spectrum Symphony from [IBM Spectrum Analytics](https://www.ibm.com/us-en/marketplace/analytics-workload-management).  
