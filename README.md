@@ -27,6 +27,12 @@ Currently, this project only supports Linux-only Symphony clusters.  Windows wor
 
 This project requires running Azure CycleCloud version 7.7.1 and Symphony 7.2.0 or later.
 
+The Host Factory provider plugin requires Python 3.9 or later on the master node:
+its pinned `cyclecloud-scalelib` dependencies (`requests`, `urllib3`) do not support
+older Python. The default template image is therefore `cycle.image.ubuntu22`
+(Ubuntu 22.04, Python 3.10). Ubuntu 20.04 images ship Python 3.8 and cannot install
+the plugin.
+
 This project requires the following:
 
   1. A license to use IBM Spectrum Symphony from [IBM Spectrum Analytics](https://www.ibm.com/us-en/marketplace/analytics-workload-management).  

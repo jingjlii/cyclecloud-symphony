@@ -264,7 +264,7 @@ Order = 20
         Label = Base OS
         ParameterType = Cloud.Image
         Config.OS = linux
-        DefaultValue = cycle.image.ubuntu20
+        DefaultValue = cycle.image.ubuntu22
 
         [[[parameter MasterBootDiskSize]]]
         Label = Master Boot Disk Size
